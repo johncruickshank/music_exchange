@@ -34,4 +34,11 @@ public class TestShop {
         shop.removeSellable(cd);
         assertEquals(1, shop.stock.size());
     }
+
+    @Test
+    public void canGetTotalPotentialProfit() throws Exception {
+        shop.addSellable(cd);
+        shop.addSellable(piano);
+        assertEquals(4805, shop.calculatePotentialProfit());
+    }
 }

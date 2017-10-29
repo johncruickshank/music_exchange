@@ -32,5 +32,13 @@ public class Shop {
         }
     }
 
+    public int calculatePotentialProfit() {
+        int total = 0;
+        for (Sellable item : stock) {
+            total +=item.calculateMarkup();
+        }
+        return total;
+    }
+
 
 }
