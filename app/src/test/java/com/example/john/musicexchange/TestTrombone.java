@@ -3,7 +3,7 @@ package com.example.john.musicexchange;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static junit.framework.Assert.assertEquals;
 
 /**
  * Created by John on 29/10/2017.

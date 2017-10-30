@@ -10,11 +10,16 @@ import static org.junit.Assert.assertEquals;
  */
 
 public class TestPiano {
-    Piano piano;
+    private Piano piano;
 
     @Before
     public void setUp() throws Exception {
         piano = new Piano("keyboard", "spruce", "black", 1500, 6300, "grand");
+    }
+
+    @Test
+    public void canGetFamily() throws Exception {
+        assertEquals("keyboard", piano.getFamily());
     }
 
     @Test

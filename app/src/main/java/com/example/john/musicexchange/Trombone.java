@@ -7,16 +7,8 @@ package com.example.john.musicexchange;
 public class Trombone extends Instrument implements Playable, Sellable {
     String trombType;
 
-    public Trombone(String family, String material, String colour, int buyPrice, int sellPrice, String trombType) {
+    protected Trombone(String family, String material, String colour, int buyPrice, int sellPrice, String trombType) {
         super(family, material, colour, buyPrice, sellPrice);
-        this.trombType = trombType;
-    }
-
-    public String getTrombType() {
-        return trombType;
-    }
-
-    public void setTrombType(String trombType) {
         this.trombType = trombType;
     }
 

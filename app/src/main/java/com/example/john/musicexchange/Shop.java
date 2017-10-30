@@ -7,27 +7,26 @@ import java.util.ArrayList;
  */
 
 public class Shop {
-//    CD cd;
-//    Drum drum;
-//    Guitar guitar;
-//    GuitarStrings guitarStrings;
-//    Piano piano;
-//    SheetMusic sheetMusic;
-//    Trombone trombone;
-    ArrayList<Sellable> stock;
 
-    public Shop() {
+    private ArrayList<Sellable> stock;
+
+    protected Shop() {
         this.stock = new ArrayList<>();
     }
 
     public void addSellable(Sellable sellable) {
-        stock.add(sellable);
+        this.stock.add(sellable);
+    }
+
+
+    public int stockSize() {
+        return stock.size();
     }
 
     public void removeSellable(Sellable sellable) {
         for (Sellable item : stock) {
             if (item.equals(sellable)) {
-                stock.remove(item);
+                this.stock.remove(item);
             }
         }
     }
@@ -39,6 +38,4 @@ public class Shop {
         }
         return total;
     }
-
-
 }

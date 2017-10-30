@@ -5,7 +5,7 @@ package com.example.john.musicexchange;
  */
 
 public class GuitarStrings extends Item implements Sellable {
-    public GuitarStrings(String description, int buyPrice, int sellPrice) {
+    protected GuitarStrings(String description, int buyPrice, int sellPrice) {
         super(description, buyPrice, sellPrice);
     }
 }

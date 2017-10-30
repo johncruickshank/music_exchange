@@ -5,18 +5,10 @@ package com.example.john.musicexchange;
  */
 
 public class Piano extends Instrument implements Playable, Sellable {
-    String type;
+    private String type;
 
-    public Piano(String family, String material, String colour, int buyPrice, int sellPrice, String type) {
+    protected Piano(String family, String material, String colour, int buyPrice, int sellPrice, String type) {
         super(family, material, colour, buyPrice, sellPrice);
-        this.type = type;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
         this.type = type;
     }
 

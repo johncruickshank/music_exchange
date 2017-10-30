@@ -24,7 +24,7 @@ public class TestShop {
     @Test
     public void canAddToStock() throws Exception {
         shop.addSellable(cd);
-        assertEquals(1, shop.stock.size());
+        assertEquals(1, shop.stockSize());
     }
 
     @Test
@@ -32,7 +32,7 @@ public class TestShop {
         shop.addSellable(cd);
         shop.addSellable(piano);
         shop.removeSellable(cd);
-        assertEquals(1, shop.stock.size());
+        assertEquals(1, shop.stockSize());
     }
 
     @Test
